@@ -1,13 +1,13 @@
 module.exports = {
     base: '/shang-blog/',
+    // 你的GitHub仓库
+    repo: 'https://github.com/troy-sxj/shang-blog',
     title: 'shang-demo',
     description: 'Shang blog',
     head: [
         ['link', { rel: 'icon', href: '/img/vue-logo.png' }]
     ],
     themeConfig: {
-        // 你的GitHub仓库
-        repo: 'https://github.com/troy-sxj/shang-blog',
         // 自定义仓库链接文字。
         repoLabel: 'My GitHub',
         sidebarDepth: 4, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
@@ -26,13 +26,13 @@ module.exports = {
             // 这里的'/' 指的是 docs文件夹路径
             // [以 '/' 结尾的默认指向该路径下README.md文件]
             { text: '首页', link: '/' },
-            { text: 'FirstBlog', link: '/blog/README.md' }
+            // { text: 'FirstBlog', link: '/blog/README.md' }
         ],
 
         //侧边栏
         sidebar: [
             ['/', '首页'],
-            ['/blog/FirstBlog.md', '我的第一篇博客']
+            // ['/blog/FirstBlog.md', '我的第一篇博客']
         ]
     }
 }
